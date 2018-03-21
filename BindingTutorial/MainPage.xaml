@@ -9,28 +9,31 @@
 
     <Page.Resources>
         <CollectionViewSource x:Name="RecordingsCollection" Source="{x:Bind ViewModel.Recordings}"/>
+        <local:StringFormatter x:Key="StringFormatterValueConverter"/>
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <ListView x:Name="recordingsListView" ItemsSource="{x:Bind ViewModel.Recordings}">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Recording">
-                        <StackPanel Orientation="Horizontal" Margin="6">
-                            <SymbolIcon Symbol="Audio" Margin="0,0,12,0"/>
-                            <StackPanel>
-                                <TextBlock Text="{x:Bind CompositionName}"/>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ListView x:Name="recordingsListView" ItemsSource="{x:Bind ViewModel.Recordings}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:Recording">
+                            <StackPanel Orientation="Horizontal" Margin="6">
+                                <SymbolIcon Symbol="Audio" Margin="0,0,12,0"/>
+                                <StackPanel>
+                                    <TextBlock Text="{x:Bind CompositionName}"/>
+                                </StackPanel>
                             </StackPanel>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackPanel DataContext="{Binding SelectedItem, ElementName=recordingsListView}"
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackPanel DataContext="{Binding SelectedItem, ElementName=recordingsListView}"
             Margin="0,24,0,0">
-                <TextBlock Text="{Binding ArtistName}"/>
-                <TextBlock Text="{Binding CompositionName}"/>
-                <TextBlock Text="{Binding ReleaseDateTime}"/>
+                    <TextBlock Text="{Binding ArtistName}"/>
+                    <TextBlock Text="{Binding CompositionName}"/>
+                    <TextBlock Text="{Binding ReleaseDateTime}"/>
+                </StackPanel>
             </StackPanel>
-        </StackPanel>
+        </Grid>
     </Grid>
 </Page>

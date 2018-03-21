@@ -132,19 +132,21 @@ namespace BindingTutorial.BindingTutorial_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "BindingTutorial.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "BindingTutorial.ViewModels.RecordingViewModel";
-            _typeNameTable[4] = "Object";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "BindingTutorial.StringFormatter";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "BindingTutorial.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[5] = "BindingTutorial.ViewModels.RecordingViewModel";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::BindingTutorial.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::BindingTutorial.ViewModels.RecordingViewModel);
-            _typeTable[4] = typeof(global::System.Object);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::BindingTutorial.StringFormatter);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::BindingTutorial.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[5] = typeof(global::BindingTutorial.ViewModels.RecordingViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,8 +181,9 @@ namespace BindingTutorial.BindingTutorial_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::BindingTutorial.MainPage(); }
-        private object Activate_3_RecordingViewModel() { return new global::BindingTutorial.ViewModels.RecordingViewModel(); }
+        private object Activate_0_StringFormatter() { return new global::BindingTutorial.StringFormatter(); }
+        private object Activate_2_MainPage() { return new global::BindingTutorial.MainPage(); }
+        private object Activate_5_RecordingViewModel() { return new global::BindingTutorial.ViewModels.RecordingViewModel(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -192,31 +195,38 @@ namespace BindingTutorial.BindingTutorial_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  BindingTutorial.MainPage
+            case 0:   //  BindingTutorial.StringFormatter
+                userType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_StringFormatter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 1:   //  Object
+                xamlType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  BindingTutorial.MainPage
                 userType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_2_MainPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 3:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 4:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  BindingTutorial.ViewModels.RecordingViewModel
+            case 5:   //  BindingTutorial.ViewModels.RecordingViewModel
                 userType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
-                break;
-
-            case 4:   //  Object
-                xamlType = new global::BindingTutorial.BindingTutorial_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
