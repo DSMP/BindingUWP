@@ -15,19 +15,19 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <ListView x:ConnectionId='3' x:Name="recordingsListView"                                            >
+                <ListView ItemsSource="{Binding Source={StaticResource RecordingsCollection}}">
                     <ListView.ItemTemplate>
                         <DataTemplate                             >
-                            <StackPanel x:ConnectionId='4' Orientation="Horizontal" Margin="6">
+                            <StackPanel x:ConnectionId='3' Orientation="Horizontal" Margin="6">
                                 <SymbolIcon Symbol="Audio" Margin="0,0,12,0"/>
                                 <StackPanel>
-                                    <TextBlock x:ConnectionId='5'                                />
+                                    <TextBlock x:ConnectionId='4'                                />
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <StackPanel DataContext="{Binding SelectedItem, ElementName=recordingsListView}"
+                <StackPanel DataContext="{Binding Source={StaticResource RecordingsCollection}}"
             Margin="0,24,0,0">
                     <TextBlock Text="{Binding ArtistName}"/>
                     <TextBlock Text="{Binding CompositionName}"/>
