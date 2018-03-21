@@ -7,11 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <CollectionViewSource x:Name="RecordingsCollection" Source="{x:Bind ViewModel.Recordings}"/>
+    </Page.Resources>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <!--<TextBlock Text="{x:Bind ViewModel.DefaultRecording.OneLineSummary}"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"/>-->
-        <ListView ItemsSource="{x:Bind ViewModel.Recordings}"
-        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ListView x:Name="recordingsListView" ItemsSource="{x:Bind ViewModel.Recordings}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Recording">
+                        <StackPanel Orientation="Horizontal" Margin="6">
+                            <SymbolIcon Symbol="Audio" Margin="0,0,12,0"/>
+                            <StackPanel>
+                                <TextBlock Text="{x:Bind CompositionName}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackPanel DataContext="{Binding SelectedItem, ElementName=recordingsListView}"
+            Margin="0,24,0,0">
+                <TextBlock Text="{Binding ArtistName}"/>
+                <TextBlock Text="{Binding CompositionName}"/>
+                <TextBlock Text="{Binding ReleaseDateTime}"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

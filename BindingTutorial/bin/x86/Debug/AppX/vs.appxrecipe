@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T18:31:07.261</Modified>
+      <Modified>2018-03-21T18:44:41.353</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\BindingTutorial.exe">
       <PackagePath>entrypoint\BindingTutorial.exe</PackagePath>
-      <Modified>2018-03-21T18:31:05.729</Modified>
+      <Modified>2018-03-21T18:44:40.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damianek\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -535,7 +535,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\BindingTutorial.xr.xml">
       <PackagePath>BindingTutorial.xr.xml</PackagePath>
-      <Modified>2018-03-21T18:25:34.147</Modified>
+      <Modified>2018-03-21T18:44:40.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T18:31:06.981</Modified>
+      <Modified>2018-03-21T18:44:41.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\Core\BindingTutorial.exe">
       <PackagePath>BindingTutorial.exe</PackagePath>
-      <Modified>2018-03-21T18:31:07.258</Modified>
+      <Modified>2018-03-21T18:44:41.349</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
