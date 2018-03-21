@@ -31,7 +31,8 @@
             Margin="0,24,0,0">
                     <TextBlock Text="{Binding ArtistName}"/>
                     <TextBlock Text="{Binding CompositionName}"/>
-                    <TextBlock Text="{Binding ReleaseDateTime}"/>
+                    <TextBlock Text="{Binding ReleaseDateTime, Converter={StaticResource StringFormatterValueConverter},
+        ConverterParameter=Released: \{0:d\}}"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
