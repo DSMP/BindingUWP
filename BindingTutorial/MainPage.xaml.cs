@@ -25,8 +25,8 @@ namespace BindingTutorial
         public MainPage()
         {
             this.InitializeComponent();
-            this.ViewModel = new RecordingViewModel();
+            this.ViewModel = new ViewModels.RecordingViewModel();
         }
-        public RecordingViewModel ViewModel { get; set; }
+        public ViewModels.RecordingViewModel ViewModel { get; set; }
     }
 }

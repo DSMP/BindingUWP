@@ -8,8 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="{x:Bind ViewModel.DefaultRecording.OneLineSummary}"
+        <!--<TextBlock Text="{x:Bind ViewModel.DefaultRecording.OneLineSummary}"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center"/>
+            VerticalAlignment="Center"/>-->
+        <ListView ItemsSource="{x:Bind ViewModel.Recordings}"
+        HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Page>

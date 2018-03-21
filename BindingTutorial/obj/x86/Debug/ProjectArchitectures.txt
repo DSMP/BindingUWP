@@ -1,1 +1,1 @@
-C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\BindingTutorial.csproj;x86
+C:\GitProjects\BindingTutorial\BindingTutorial\BindingTutorial.csproj;x86

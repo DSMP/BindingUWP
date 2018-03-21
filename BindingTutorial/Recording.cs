@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BindingTutorial.ViewModels;
 
 namespace BindingTutorial
 {
@@ -30,5 +31,10 @@ namespace BindingTutorial
     {
         private Recording defaultRecording = new Recording();
         public Recording DefaultRecording { get { return this.defaultRecording; } }
+
+        public static implicit operator RecordingViewModel(ViewModels.RecordingViewModel v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

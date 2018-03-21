@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e262eb9d-0717-45d0-bbdc-54a8bc826955</PackageIdentityName>
     <PackageIdentityPublisher>CN=Damianek</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\GitProjects\BindingTutorial\BindingTutorial\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\bin\x86\Debug\BindingTutorial.exe">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\BindingTutorial.exe">
       <PackagePath>entrypoint\BindingTutorial.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Damianek\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,47 +370,47 @@
     <AppxPackagedFile Include="C:\Users\Damianek\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\bin\x86\Debug\BindingTutorial.xr.xml">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\BindingTutorial.xr.xml">
       <PackagePath>BindingTutorial.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Damianek\Documents\Visual Studio 2017\Projects\BindingTutorial\BindingTutorial\bin\x86\Debug\Core\BindingTutorial.exe">
+    <AppxPackagedFile Include="C:\GitProjects\BindingTutorial\BindingTutorial\bin\x86\Debug\Core\BindingTutorial.exe">
       <PackagePath>BindingTutorial.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

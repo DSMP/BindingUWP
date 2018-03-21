@@ -25576,11 +25576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Damianek\\Documents\\Visual Studio 2017\\Projects\\BindingTutorial\\BindingTutorial\\BindingTutorial.csproj",
+      "projectUniqueName": "C:\\GitProjects\\BindingTutorial\\BindingTutorial\\BindingTutorial.csproj",
       "projectName": "BindingTutorial",
-      "projectPath": "C:\\Users\\Damianek\\Documents\\Visual Studio 2017\\Projects\\BindingTutorial\\BindingTutorial\\BindingTutorial.csproj",
+      "projectPath": "C:\\GitProjects\\BindingTutorial\\BindingTutorial\\BindingTutorial.csproj",
       "packagesPath": "C:\\Users\\Damianek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Damianek\\Documents\\Visual Studio 2017\\Projects\\BindingTutorial\\BindingTutorial\\obj\\",
+      "outputPath": "C:\\GitProjects\\BindingTutorial\\BindingTutorial\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
